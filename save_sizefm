@@ -1,0 +1,5 @@
+ 
+for lay=1:21
+size_featureMaps(lay,:)=calculate_size_feature_maps(net,normalization, lay);
+end
+ save('size_featureMaps','size_featureMaps','-v7.3');
